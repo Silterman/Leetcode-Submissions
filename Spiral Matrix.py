@@ -22,7 +22,7 @@ class Solution:
 
                 while [] in matrix: #cleaning up incase you have single file lists
                     matrix.remove([])
-            except IndexError:
+            except IndexError: #I use this so I can get away with the del function
                 break
         return output
     
