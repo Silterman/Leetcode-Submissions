@@ -1,7 +1,6 @@
 #https://leetcode.com/problems/valid-sudoku/description/
 #https://leetcode.com/submissions/detail/1223423435/
 
-#still a massive memory hog, but already lots faster
 class Solution:
     def isValidSudoku(self, board: list[list[str]]) -> bool:
         columns = [{}, {}, {}, {}, {}, {}, {}, {}, {}]
