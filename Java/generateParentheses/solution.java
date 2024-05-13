@@ -3,10 +3,16 @@ package Java.generateParentheses;
 import java.util.ArrayList;
 import java.util.List;
 
-public class solution {
+public class Solution {
     public List<String> generateParenthesis(int n) {
         List<String>parentheses = new ArrayList<>();
         parentheses.add("(");
+
+        if (n == 1) {
+            parentheses.remove(0);
+            parentheses.add("()");
+            return parentheses;
+        }
 
         while (true) {
             List<String> temporaryParentheses = new ArrayList<>();
@@ -46,7 +52,7 @@ public class solution {
 
     public static void main(String[] args) {
         //generate solution class to make methods callable
-        solution obj = new solution();
+        Solution obj = new Solution();
 
         List<String> output = obj.generateParenthesis(3);
         System.out.println(output);
