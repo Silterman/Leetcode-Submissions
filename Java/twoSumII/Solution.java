@@ -5,7 +5,7 @@ class Solution {
         int beginPointer = 0;
         int endPointer = numbers.length-1;
 
-        int sum = 0;
+        int sum;
 
         while (true) {
             sum = numbers[beginPointer]+numbers[endPointer];
